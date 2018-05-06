@@ -6,7 +6,7 @@
 /*   By: mlewis-l <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/02 10:02:23 by mlewis-l          #+#    #+#             */
-/*   Updated: 2018/05/03 10:57:47 by mlewis-l         ###   ########.fr       */
+/*   Updated: 2018/05/06 10:38:33 by mlewis-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_itoa(int n)
 
 	i = 0;
 	if (n == -2147483648)
-		return (ft_strdup("2147483648"));
+		return (ft_strdup("-2147483648"));
 	nsz = ft_nblen(n, 10);
 	if (!(str = (char *)malloc(sizeof(char) * (nsz + 1))))
 		return (NULL);

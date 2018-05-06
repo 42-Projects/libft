@@ -6,7 +6,7 @@
 /*   By: mlewis-l <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/30 12:53:45 by mlewis-l          #+#    #+#             */
-/*   Updated: 2018/05/05 15:21:35 by mlewis-l         ###   ########.fr       */
+/*   Updated: 2018/05/05 15:50:16 by mlewis-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,4 +18,6 @@ void	ft_strdel(char **as)
 		return ;
 	free(*as);
 	*as = NULL;
+	if (*as != NULL)
+		return ;
 }
