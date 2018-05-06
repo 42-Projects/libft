@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mlewis-l <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/04/30 12:53:45 by mlewis-l          #+#    #+#             */
-/*   Updated: 2018/05/05 15:50:16 by mlewis-l         ###   ########.fr       */
+/*   Created: 2018/05/06 10:44:04 by mlewis-l          #+#    #+#             */
+/*   Updated: 2018/05/06 10:44:09 by mlewis-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,8 @@
 
 void	ft_strdel(char **as)
 {
-	if (!as || !**as)
+	if (!as || !*as)
 		return ;
 	free(*as);
 	*as = NULL;
-	if (*as != NULL)
-		return ;
 }
